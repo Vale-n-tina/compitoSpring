@@ -1,5 +1,5 @@
 package com.example.compitoSpring.postazione;
 
-public enum StatoPostazione {
+public enum TipoPostazione {
     PRIVATO, OPENSPACE, SALA_RIUNIONI
 }

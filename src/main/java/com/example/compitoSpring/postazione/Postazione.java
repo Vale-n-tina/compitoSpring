@@ -15,7 +15,7 @@ public class Postazione {
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Long id;
     private String descrizione;
-    private StatoPostazione stato;
+    private TipoPostazione stato;
     private int numeroMaxPartecipanti;
 
     @ManyToOne
