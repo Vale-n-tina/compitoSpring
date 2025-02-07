@@ -37,7 +37,7 @@ public class PrenotazioniService {
 
     public Prenotazione creaPrenotazione(Utente utente, Postazione postazione, LocalDate dataPrenotazione) {
 
-        if (utenteHaUnaPrenotazione(utente, dataPrenotazione) || !postazioneLibera(postazione, dataPrenotazione)) {
+        if (utenteHaUnaPrenotazione(utente, dataPrenotazione) && !postazioneLibera(postazione, dataPrenotazione)) {
 
             throw new IllegalArgumentException("L'utente ha già una prenotazione per questa data o la prenotazione non è disponibile");
         }
