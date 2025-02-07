@@ -34,12 +34,12 @@ public class FindRunner implements CommandLineRunner {
 
         Utente utente7 = UtenteRepository.findById(1L).orElse(null);
         Postazione postazione7 = postazioneRepository.findById(1L).orElse(null);
-        
+
 
 
         System.out.println("----Creare una prenotazione-----");
         try {
-            Prenotazione prenotazione = prenotazioniService.creaPrenotazione(utente7, postazione7, LocalDate.of(2025, 03, 10));
+            Prenotazione prenotazione = prenotazioniService.creaPrenotazione(utente7, postazione7, LocalDate.of(2025, 04, 10));
             System.out.println("Prenotazione creata con successo");
             ;
         } catch (IllegalArgumentException e) {
